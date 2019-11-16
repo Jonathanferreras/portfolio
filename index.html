@@ -4,40 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Welcome</title>
 </head>
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .greetings p {
-    font-weight: 800;
-    font-size: 2em;
-    text-align: center;
-    line-height: 50px;
-  }
-
-  .greetings p span {
-    color: #BADC58;
-    background-color: #292929;
-    padding: 5px;
-    border-radius: 5px;
-  }
-</style>
 <body>
   <main>
-    <div class="greetings">
-      <p>
-        Welcome to my website.<br>
-        Stay tuned, content <span>coming soon!</span>
-      </p>
-    </div>
+    <section class="navbar">
+      <ul class="links">
+        <li class="blog">
+          <a href="">Blog</a>
+        </li>
+        <li class="github">
+          <a target="blank" href="https://github.com/Jonathanferreras">Github</a>
+        </li>
+        <li class="linkedin">
+          <a target="blank" href="https://www.linkedin.com/in/jonathan-ferreras/">LinkedIn</a>
+        </li>
+      </ul>
+    </section>
+    <section class="header">
+      <div class="heading">
+        <span>Jonathan Ferreras</span>
+      </div>
+      <div class="sub-heading">
+        <span>Software Engineer, Enthusiast, Dreamer.</span>
+      </div>
+      <div class="btn">
+        <span>Get in touch</span>
+      </div>
+    </section>
+    <section class="illustration">
+      <div class="caption">
+        <p>
+          Based in New York, <br>
+          I specialize in full-stack <br> 
+          development.
+        </p>
+      </div>
+      <img src="assets/img/man-at-desk.svg" alt="man at desk">
+    </section>
+    <section class="skills-overview">
+      <div class="title">Skills Overview</div>
+      <div class="underline"></div>
+      <div class="description">
+        <p>
+            I have over 2 years in the industry working with rich web and mobile applications. <br>
+            Below is a quick overview of my technical skill sets and tools I use.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">
+            <img src="assets/img/Icon awesome-desktop.svg" alt="">
+          </div>
+          <div class="card-title">Frontend</div>
+          <div class="card-body">
+            <ul>
+              <li>List item 1</li>
+              <li>List item 1</li>
+              <li>List item 1</li>
+              <li>List item 1</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="assets/img/Icon awesome-database.svg" alt="">
+              </div>
+              <div class="card-title">Backend</div>
+              <div class="card-body">
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                </ul>
+              </div>
+        </div>
+        <div class="card">
+            <div class="card-icon">
+                <img src="assets/img/Icon awesome-code.svg" alt="">
+              </div>
+              <div class="card-title">Other</div>
+              <div class="card-body">
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                  <li>List item 1</li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="title"></div>
+      <div class="description"></div>
+      <div class="project-selector"></div>
+      <div class="projects-area">
+        <div class="projects-grid"></div>
+      </div>
+    </section>
   </main>
+
+  <script src="assets/js/index.js"></script>
 </body>
 </html>
