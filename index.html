@@ -10,21 +10,23 @@
   <title>Welcome</title>
 </head>
 <body>
+  <div class="beta"><strong>Beta:</strong> This website is still under construction!</div>
+  <header class="navbar">
+    <ul class="links">
+      <!-- <li class="blog">
+        <a href="">Blog</a>
+      </li> -->
+      <li class="github">
+        <a target="blank" href="https://github.com/Jonathanferreras">Github</a>
+      </li>
+      <li class="linkedin">
+        <a target="blank" href="https://www.linkedin.com/in/jonathan-ferreras/">LinkedIn</a>
+      </li>
+    </ul>
+  </header>
+
   <main>
-    <section class="navbar">
-      <ul class="links">
-        <li class="blog">
-          <a href="">Blog</a>
-        </li>
-        <li class="github">
-          <a target="blank" href="https://github.com/Jonathanferreras">Github</a>
-        </li>
-        <li class="linkedin">
-          <a target="blank" href="https://www.linkedin.com/in/jonathan-ferreras/">LinkedIn</a>
-        </li>
-      </ul>
-    </section>
-    <section class="header">
+    <section class="hero">
       <div class="heading">
         <span>Jonathan Ferreras</span>
       </div>
@@ -45,6 +47,7 @@
       </div>
       <img src="assets/img/man-at-desk.svg" alt="man at desk">
     </section>
+
     <section class="skills-overview">
       <div class="title">Skills Overview</div>
       <div class="underline"></div>
@@ -55,7 +58,7 @@
         </p>
       </div>
       <div class="cards">
-        <div class="card">
+        <div class="skill-card card">
           <div class="card-icon">
             <img src="assets/img/Icon awesome-desktop.svg" alt="">
           </div>
@@ -69,7 +72,7 @@
             </ul>
           </div>
         </div>
-        <div class="card">
+        <div class="skill-card card">
             <div class="card-icon">
                 <img src="assets/img/Icon awesome-database.svg" alt="">
               </div>
@@ -83,7 +86,7 @@
                 </ul>
               </div>
         </div>
-        <div class="card">
+        <div class="skill-card card">
             <div class="card-icon">
                 <img src="assets/img/Icon awesome-code.svg" alt="">
               </div>
@@ -99,6 +102,7 @@
         </div>
       </div>
     </section>
+
     <section class="projects">
       <div class="title">Projects</div>
       <div class="underline"></div>
@@ -110,15 +114,32 @@
       </div>
       <div class="project-selector">
         <ul>
-          <li class="active">Work</li>
-          <li>Personal</li>
+          <li class="selector active">Work</li>
+          <li class="selector">Personal</li>
         </ul>
       </div>
     </section>
+
     <section class="projects-area">
-        <div class="projects-grid"></div>
+        <div class="work-projects show">
+          <div class="mta card">
+            <div class="card-title">Full-Stack Developer</div>
+            <div class="card-sub-title">Metropolitan Transportation Authority</div>
+            <div class="card-body"></div>
+          </div>
+          <div class="card">
+              <div class="card-title">Web Developer</div>
+              <div class="card-sub-title">Southwest Physical Therapy</div>
+              <div class="card-body"></div>
+          </div> 
+        </div>
+        <div class="personal-projects"></div>
     </section>
   </main>
+
+  <footer>
+
+  </footer>
 
   <script src="assets/js/index.js"></script>
 </body>

@@ -23,6 +23,13 @@ body {
   font-size: 16px;
 }
 
+.beta {
+  background-color: yellow;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
 
 /*NAVBAR*/
 
@@ -53,9 +60,9 @@ body {
   color: var(--green);
 }
 
-/*HEADER*/
+/*HERO*/
 
-.header {
+.hero {
   background-color: var(--black);
   color: var(--white);
 
@@ -67,21 +74,21 @@ body {
   height: 60vh;
 }
 
-.header .heading {
+.hero .heading {
   font-size: var(--heading);
   font-weight: bold;
 
   margin-bottom: 0.2em;
 }
 
-.header .sub-heading {
+.hero .sub-heading {
   color: var(--dark-gray);
 
   font-size: var(--sub-heading);
   font-weight: lighter;
 }
 
-.header .btn {
+.hero .btn {
   background-color: var(--green);
   color: var(--black);
 
@@ -92,7 +99,7 @@ body {
   border-radius: 0.1em;
 }
 
-.header .btn:hover {
+.hero .btn:hover {
   color: var(--white);
   cursor: pointer;
 }
@@ -139,7 +146,6 @@ body {
   flex-direction: column;
 
   padding: 2em 4em;
-  height: 120vh;
 }
 
 .skills-overview .title {
@@ -153,17 +159,15 @@ body {
   margin: 10em;
 }
 
-.card {
-  background-color: var(--white);
-  box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.25);  
-
+.skill-card {
+  padding: 0 0 15em 0;  
+  margin: 3em 2em;
   width: 20em;
+  border-radius: 0.3em;
+
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 0.3em;
-  padding: 0 0 15em 0;  
-  margin: 0 2em;
 }
 
 .card-icon {
@@ -180,14 +184,7 @@ body {
   height: 2em;
 }
 
-.card-title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
 
-.card-body {
-
-}
 
 
 /*PROJECTS*/
@@ -222,17 +219,40 @@ body {
 }
 
 
-.project-selector .active {
+.selector.active {
   font-weight: bold;
   border-bottom: 4px solid var(--green);
 }
 
 .projects-area {
   background-color: var(--green);
-
+  
   height: 50vh;
+  padding: 10em 20em;
 }
 
+.work-projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-projects .card {
+  margin: 1em;
+}
+
+.work-projects .mta {
+
+}
+
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  height: 10vh;
+}
 
 /*RE-USABLE CLASSES*/
 .title {
@@ -255,6 +275,20 @@ body {
   line-height: 1.5em;
 }
 
+.card {
+  background-color: var(--white);
+  box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.25);
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-body {
+
+}
+
 body::-webkit-scrollbar {
   width: 0.5em;
 }
@@ -264,8 +298,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background-color: var(--green);
-outline: 1px solid slategrey;
+background-color: #d8ed78;
+outline: 2px solid slategrey;
 }
 
 /*------------------------------------------
@@ -285,5 +319,21 @@ outline: 1px solid slategrey;
 @media all and (max-width: 480px) { 
   body{
     font-size: 10px;
+  }
+
+
+
+  .illustration .caption {
+    text-align: center;
+    margin: 4em 1em;
+  }
+
+  .illustration img {
+    height: 20em;
+    margin-bottom: -30px;
+  }
+
+  .cards, .illustration {
+    flex-direction: column;
   }
 }
