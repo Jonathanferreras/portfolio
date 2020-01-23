@@ -20,6 +20,10 @@
 }
 
 /*RE-USABLE CLASSES*/
+.hideme {
+  opacity: 0;
+}
+
 .pad-block-sm {
   padding: 1em;
 }
@@ -256,6 +260,10 @@ body {
   text-align: center;
 }
 
+#projectsEmailMe {
+  color: var(--dark-green);
+}
+
 .contact {
   padding-top: 10em;
   padding-bottom: 10em;
@@ -265,7 +273,6 @@ body {
   max-width: 500px;
 }
 
-
 /*FOOTER*/
 
 footer {
@@ -274,7 +281,6 @@ footer {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
 
 /*------------------------------------------
   Responsive Grid Media Queries - 1280, 1024, 768, 480

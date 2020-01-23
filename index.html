@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
-xmlns:og="http://ogp.me/ns#">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -198,7 +195,7 @@ xmlns:og="http://ogp.me/ns#">
               <p>
                 Here are some projects that I had the opportunity of being a
                 part of. <br />
-                Want to learn more? <a href="#contact">Email me.</a>
+                Want to learn more? <a id="projectsEmailMe" href="#contact">Email me.</a>
               </p>
             </div>
           </div>
@@ -350,7 +347,7 @@ xmlns:og="http://ogp.me/ns#">
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section class="" id="contact">
         <div class="container">
           <div class="row"></div>
           <div class="row flex-center">
@@ -364,35 +361,34 @@ xmlns:og="http://ogp.me/ns#">
             <strong>fill out the form</strong>  and let's start a conversation!
             </p>
             <div class="pad-block-sm"></div>
-            <div class="card">
+            <div class="card w-50">
               <div class="card-body">
-                <form name="contact" method="POST" data-netlify="true" netlify-recaptcha="true">
+                <form name="contact" method="POST" data-netlify="true">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address*</label>
+                    <label for="emailInput">Email address*</label>
                     <input
                       type="email"
+                      name="email"
                       class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
+                      id="emailInput"
+                      aria-describedby="email"
                       placeholder="Enter email"
                       required
                     />
-                    <!-- <small id="emailHelp" class="form-text text-muted"
-                      >We'll never share your email with anyone else.</small
-                    > -->
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message*</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                  
-                  </div>
-                  <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1"><small id="emailHelp" class="form-text text-muted"
-                      >Are you an employer?</small
-                    ></label>
                   </div>
                   <div class="pad-block-sm"></div>
-
+                  <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea class="form-control" id="message" rows="3" name="message"></textarea>                  
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="employerCheckbox" name="employer?">
+                    <label class="form-check-label" for="employerCheckbox">
+                      <small class="form-text text-muted">Are you an employer?</small>
+                  </label>
+                  </div>
+                  <div class="pad-block-sm"></div>
+                  <div netlify-recaptcha="true"></div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
               </div>
